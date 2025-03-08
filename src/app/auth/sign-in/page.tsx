@@ -10,9 +10,7 @@ export const metadata: Metadata = {
 const SignIn = () => {
     return (
         <AuthLayout>
-            <div>
-                <SignInContent />
-            </div>
+            <SignInContent />
         </AuthLayout>
     );
 };

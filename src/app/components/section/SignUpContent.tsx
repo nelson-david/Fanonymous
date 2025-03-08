@@ -1,24 +1,53 @@
 "use client";
+
 import { useState } from "react";
 import CustomInput from "@/app/components/form/CustomInput";
 import clsx from "clsx";
 import Link from "next/link";
 import { ImSpinner8 } from "react-icons/im";
+import axios from "axios";
+import { API_URL, errorToast, successToast } from "@/app/const";
+import { useRouter } from "next/navigation";
 
 const SignUpContent = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [processing, setProcessing] = useState(false);
+    const router = useRouter();
+
+    const signUp = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setProcessing(true);
+        axios
+            .post(`${API_URL}/sign-up`, {
+                username,
+                password,
+            })
+            .then(function () {
+                successToast("Account successfully created; Login now");
+                router.push("/auth/sign-in");
+            })
+            .catch(function (error: any) {
+                if (error.response) {
+                    errorToast(error.response.data);
+                } else {
+                    errorToast("An error occured");
+                }
+            })
+            .finally(() => {
+                setProcessing(false);
+            });
+    };
 
     return (
         <div className="flex flex-row justify-center pt-16">
             <div className="w-[450px]">
-                <form>
+                <form onSubmit={signUp}>
                     <div className="pb-5">
                         <legend className="text-center font-rebond text-[35px] font-bold tracking-tight">
                             Sign up
                         </legend>
-                        <span className="p-3 text-center block font-rebond text-[16px] tracking-normal font-medium">
+                        <span className="p-3 text-center block font-inter text-[15px] tracking-normal font-medium">
                             Recieve anonymous compliments from your friends and
                             send anonymous messages to your friends for free.
                         </span>

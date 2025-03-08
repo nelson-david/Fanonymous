@@ -5,6 +5,7 @@ import Lenis from "@studio-freight/lenis";
 import AOS from "aos";
 import Navbar from "@/app/components/navigation/Navbar";
 import Footer from "@/app/components/navigation/Footer";
+import { ToastContainer } from "react-toastify";
 
 const PageLayout = ({ children }: PropsWithChildren) => {
     useEffect(() => {
@@ -32,6 +33,7 @@ const PageLayout = ({ children }: PropsWithChildren) => {
 
     return (
         <div className="pageLayout">
+            <ToastContainer />
             <Navbar />
             <div className="App">{children}</div>
             <Footer />

@@ -26,18 +26,18 @@ const profileActions: ProfileActionsProps[] = [
         gradient: "bg-gradient-to-r from-[#0F5F34] to-[#064E3B]",
         link: "/share-on-whatsapp",
     },
-    {
-        title: "Share on Instagram",
-        icon: <InstagramIcon {...iconStyle} />,
-        gradient: "bg-gradient-to-r from-[#6D1D3C] via-[#4B1136] to-[#2E0B33]",
-        link: "/share-on-instagram",
-    },
-    {
-        title: "Settings",
-        icon: <CogIcon {...iconStyle} />,
-        gradient: "bg-gradient-to-r from-gray-900 to-gray-700",
-        link: "/settings",
-    },
+    // {
+    //     title: "Share on Instagram",
+    //     icon: <InstagramIcon {...iconStyle} />,
+    //     gradient: "bg-gradient-to-r from-[#6D1D3C] via-[#4B1136] to-[#2E0B33]",
+    //     link: "/share-on-instagram",
+    // },
+    // {
+    //     title: "Settings",
+    //     icon: <CogIcon {...iconStyle} />,
+    //     gradient: "bg-gradient-to-r from-gray-900 to-gray-700",
+    //     link: "/settings",
+    // },
 ];
 
 export { profileActions };

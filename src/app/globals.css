@@ -60,3 +60,31 @@ body {
     color: var(--foreground);
     background: var(--background);
 }
+
+.spin svg {
+    -webkit-animation: spin-animation 0.7s infinite linear;
+    animation: spin-animation 0.7s infinite linear;
+}
+
+/* CSS Animations */
+@-webkit-keyframes spin-animation {
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    0% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes spin-animation {
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    0% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
