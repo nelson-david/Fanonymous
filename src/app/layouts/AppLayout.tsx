@@ -13,7 +13,14 @@ const AppLayout = async ({ children }: PropsWithChildren) => {
 
     return (
         <div>
-            <ToastContainer />
+            <ToastContainer
+                style={{
+                    fontFamily: "var(--font-rebond)",
+                    fontWeight: 500,
+                    fontSize: 13,
+                }}
+                theme="dark"
+            />
             <div>{children}</div>
         </div>
     );

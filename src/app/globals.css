@@ -54,6 +54,7 @@
 :root {
     --background: #000000;
     --foreground: #ffffff;
+    --font-rebond: "ES Rebond Grotesque";
 }
 
 body {

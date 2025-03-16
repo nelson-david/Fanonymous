@@ -36,7 +36,7 @@ const SignInContent = () => {
             <div className="w-[450px]">
                 <form onSubmit={handleSubmit}>
                     <div className="pb-5">
-                        <legend className="text-center font-rebond text-[35px] font-bold tracking-tight">
+                        <legend className="text-center w-full font-rebond text-[35px] font-bold tracking-tight">
                             Sign in
                         </legend>
                         <span className="p-3 text-center block font-inter text-[15px] tracking-normal font-medium">
