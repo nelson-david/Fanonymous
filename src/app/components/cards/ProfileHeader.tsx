@@ -31,7 +31,9 @@ const ProfileHeader = ({ activeUser }: { activeUser: any }) => {
                 <button
                     className="flex items-center gap-2"
                     onClick={() => {
-                        copy(activeUser.username);
+                        copy(
+                            `https://fanonymous.xyz/anon/${activeUser.username}`
+                        );
                         console.log("CALLING");
                     }}
                 >
