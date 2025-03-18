@@ -27,6 +27,7 @@ const App = async () => {
                                         <SingleLink
                                             key={index}
                                             action={action}
+                                            username={activeUser.username}
                                         />
                                     );
                                 }

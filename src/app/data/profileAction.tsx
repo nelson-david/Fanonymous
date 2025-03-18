@@ -1,8 +1,8 @@
 import MessageIcon from "@/app/icons/MessageIcon";
 import ProfileIcon from "../icons/ProfileIcon";
 import WhatsappIcon from "../icons/WhatsappIcon";
-import InstagramIcon from "../icons/InstagramIcon";
-import CogIcon from "../icons/CogIcon";
+// import InstagramIcon from "../icons/InstagramIcon";
+// import CogIcon from "../icons/CogIcon";
 import { ProfileActionsProps } from "@/app/types";
 
 const iconStyle = { size: { width: "30px", height: "30px" }, color: "#ffffff" };

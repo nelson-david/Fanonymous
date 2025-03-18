@@ -36,8 +36,7 @@ const ProfileHeader = ({ activeUser }: { activeUser: any }) => {
                     }}
                 >
                     <p className="font-inter font-semibold tracking-tight text-[14px] text-white opacity-85">
-                        https://fanonymous.xyz/
-                        {activeUser.username}
+                        https://fanonymous.xyz/anon/{activeUser.username}
                     </p>
                     <BiCopy />
                 </button>

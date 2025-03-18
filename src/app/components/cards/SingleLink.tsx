@@ -5,7 +5,13 @@ import Link from "next/link";
 import { MouseEvent, useState } from "react";
 import ShareModal from "../modal/ShareModal";
 
-const SingleLink = ({ action }: { action: ProfileActionsProps }) => {
+const SingleLink = ({
+    username,
+    action,
+}: {
+    username: string;
+    action: ProfileActionsProps;
+}) => {
     const [isShareModalOpen, setIsShareModalOpen] = useState(false);
 
     const linkAction = (e: MouseEvent<HTMLAnchorElement>) => {
@@ -51,6 +57,7 @@ const SingleLink = ({ action }: { action: ProfileActionsProps }) => {
             <ShareModal
                 isOpen={isShareModalOpen}
                 setIsOpen={setIsShareModalOpen}
+                username={username}
             />
         </>
     );

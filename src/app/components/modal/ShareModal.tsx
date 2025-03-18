@@ -15,7 +15,11 @@ interface ModalProps {
     setIsOpen: Dispatch<SetStateAction<boolean>>;
 }
 
-const ShareModal = ({ isOpen, setIsOpen }: ModalProps) => {
+const ShareModal = ({
+    username,
+    isOpen,
+    setIsOpen,
+}: { username: string } & ModalProps) => {
     return (
         <AnimatePresence>
             {isOpen && (
@@ -48,31 +52,37 @@ const ShareModal = ({ isOpen, setIsOpen }: ModalProps) => {
                             <div className="grid grid-cols-2 gap-5">
                                 <SingleShareButton
                                     title="Share on Whatsapp"
+                                    username={username}
                                     icon={<FaWhatsapp color="white" />}
                                     className="bg-gradient-to-r from-[#075E54] to-[#064C44]"
                                 />
                                 <SingleShareButton
                                     title="Share on Snapchat"
+                                    username={username}
                                     icon={<FaSnapchat color="white" />}
                                     className="bg-gradient-to-r from-[#FFAC33] to-[#C78B2D]"
                                 />
                                 <SingleShareButton
                                     title="Share on Facebook"
+                                    username={username}
                                     icon={<FaFacebook color="white" />}
                                     className="bg-gradient-to-r from-[#1C1E21] to-[#0E0F10]"
                                 />
                                 <SingleShareButton
                                     title="Share to Instagram"
+                                    username={username}
                                     icon={<FaInstagram color="white" />}
                                     className="bg-gradient-to-r from-[#833AB4] via-[#531485] to-[#320F5C]"
                                 />
                                 <SingleShareButton
                                     title="Share to Twitter"
+                                    username={username}
                                     icon={<FaTwitter color="white" />}
                                     className="bg-gradient-to-r from-[#1DA1F2] to-[#16638E]"
                                 />
                                 <SingleShareButton
                                     title="Share to Line"
+                                    username={username}
                                     icon={<FaLine color="white" />}
                                     className="bg-gradient-to-r from-[#00B900] to-[#007A00]"
                                 />
@@ -88,15 +98,17 @@ const ShareModal = ({ isOpen, setIsOpen }: ModalProps) => {
 const SingleShareButton = ({
     title,
     icon,
+    username,
     className,
 }: {
     title: string;
     icon: JSX.Element;
+    username: string;
     className: string;
 }) => {
     return (
         <Link
-            href={`https://api.whatsapp.com/send?text=Write%20a%20*secret%20anonymous%20message*%20for%20me..%20%F0%9F%98%89%20I%20*won%27t%20know*%20who%20wrote%20it..%20%F0%9F%98%82%E2%9D%A4%20%F0%9F%91%89%20https://fanonymous.xyz/urban_dev`}
+            href={`https://api.whatsapp.com/send?text=Write%20a%20*secret%20anonymous%20message*%20for%20me..%20%F0%9F%98%89%20I%20*won%27t%20know*%20who%20wrote%20it..%20%F0%9F%98%82%E2%9D%A4%20%F0%9F%91%89%20https://fanonymous.xyz/${username}`}
             className={`w-[100%] h-[65px] flex flex-row justify-center items-center gap-1 rounded-[15px] p-3 ${className}  `}
         >
             <i
