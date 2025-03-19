@@ -22,9 +22,9 @@ const MessagesContent = ({ messages }: { messages: string[] }) => {
     }, []);
 
     return (
-        <div className="p-20">
+        <div className="p-0 sm:p-15 md:p-10 lg:p-20">
             <div className="flex justify-center items-center">
-                <div className="w-[850px] p-10">
+                <div className="w-[850px] p-4 sm:p-5 lg:p-10">
                     {messagesData.length === 0 ? (
                         <div>
                             <p className="font-inter font-medium tracking-tight text-center">
@@ -34,18 +34,18 @@ const MessagesContent = ({ messages }: { messages: string[] }) => {
                     ) : (
                         <>
                             <div>
-                                <h2 className="text-center text-[24px] font-rebond font-semibold tracking-tight">
+                                <h2 className="text-center text-[22px] md:text-[24px] font-rebond font-semibold tracking-tight">
                                     Messages: ({messagesData.length})
                                 </h2>
                             </div>
-                            <div className="grid grid-cols-2 gap-10 justify-items-center pt-12 pb-12">
+                            <div className="grid md:grid-cols-2 gap-6 lg:gap-10 justify-items-center py-9 lg:py-12">
                                 {messagesData.map(
                                     (message: any, index: number) => (
                                         <SingleMessageCard
                                             message={message}
                                             key={index}
                                         />
-                                    ),
+                                    )
                                 )}
                             </div>
                         </>

@@ -39,7 +39,7 @@ const SingleLink = ({
                     transition: "0.3s all ease-in-out",
                 }}
                 onClick={linkAction}
-                className={`border-[1.5px] border-black hover:border-accentcolor w-[130px] h-[130px] flex flex-col justify-center items-center rounded-full p-4 ${action.gradient} mt-2 mb-2`}
+                className={`border-[1.5px] border-black hover:border-accentcolor w-[95px] sm:w-[115px] md:w-[130px] h-[95px] sm:h-[115px] md:h-[130px] flex flex-col justify-center items-center rounded-full p-4 ${action.gradient} mt-2 mb-2`}
             >
                 <i
                     className="flex justify-center"
@@ -48,7 +48,7 @@ const SingleLink = ({
                     {action.icon}
                 </i>
                 <p
-                    className="text-center p-[2.3px] mt-[1.2px]  font-inter font-semibold tracking-tight text-[13px]"
+                    className="text-center p-[2.3px] mt-[1.2px]  font-inter font-semibold tracking-tight text-[11.5px] md:text-[13px]"
                     style={{ transform: "scale(0.9)" }}
                 >
                     {action.title}

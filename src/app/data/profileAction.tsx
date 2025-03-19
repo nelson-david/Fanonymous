@@ -5,7 +5,7 @@ import WhatsappIcon from "../icons/WhatsappIcon";
 // import CogIcon from "../icons/CogIcon";
 import { ProfileActionsProps } from "@/app/types";
 
-const iconStyle = { size: { width: "30px", height: "30px" }, color: "#ffffff" };
+const iconStyle = { size: { width: "26px", height: "26px" }, color: "#ffffff" };
 
 const profileActions: ProfileActionsProps[] = [
     {

@@ -4,7 +4,7 @@ const SingleMessageCard = ({
     message: { message: string; dateSent: string };
 }) => {
     return (
-        <div className="w-[100%] p-5 rounded-[20px] border-[2px] border-accentcolor">
+        <div className="w-[100%] p-4 sm:p-5 rounded-[20px] border-[2px] border-accentcolor">
             <div>
                 <h3 className="font-inter font-semibold text-[18px] tracking-tighter text-accentcolor">
                     Messages:{" "}
@@ -18,7 +18,7 @@ const SingleMessageCard = ({
                 </p>
             </div>
             <div className="p-1 mt-4">
-                <button className="text-center h-[43px] bg-accentcolor w-[100%] rounded-full font-inter text-[13.5px] font-medium tracking-tight">
+                <button className="text-center h-[43px] bg-accentcolor w-[100%] rounded-full font-inter text-[12.5px] sm:text-[13.5px] font-medium tracking-tight">
                     Share response
                 </button>
             </div>
