@@ -12,7 +12,7 @@ const AuthLayout = async ({ children }: PropsWithChildren) => {
     }
 
     return (
-        <div className="pageLayout">
+        <div className="pageLayout p-2">
             <ToastContainer />
             <div>{children}</div>
         </div>
