@@ -34,7 +34,7 @@ const SendMessageForm = ({ username }: { username: string }) => {
                     rows={4}
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
-                    className="p-4 font-inter text-[14px] resize-none font-medium mt-1 block w-full px-3 py-2 border-[2px] outline-none border-gray-100/10 transition-all shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 bg-black"
+                    className="p-4 font-inter text-[13px] resize-none font-medium mt-1 block w-full px-3 py-2 border-[1.5px] outline-none border-gray-400/10 transition-all shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 bg-white"
                     placeholder="Write your message here..."
                     required
                 ></textarea>

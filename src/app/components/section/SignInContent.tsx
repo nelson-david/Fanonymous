@@ -70,12 +70,19 @@ const SignInContent = () => {
                         />
                     </div>
 
-                    <div className="pt-10 pb-5">
+                    <div className="py-5">
+                        <p>
+                            Don't have an account?{" "}
+                            <Link href="/auth/sign-up">Sign up</Link>
+                        </p>
+                    </div>
+
+                    <div className="pt-5 pb-5">
                         <button
                             type="submit"
                             disabled={isPending}
                             className={clsx(
-                                "flex items-center justify-center gap-2 bg-accentcolor w-full h-[52px] text-white rounded-full font-inter font-semibold text-[13px] tracking-tight",
+                                "flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 w-full h-[52px] text-white font-inter font-semibold text-[13px] tracking-tight",
                                 isPending && "opacity-60"
                             )}
                         >

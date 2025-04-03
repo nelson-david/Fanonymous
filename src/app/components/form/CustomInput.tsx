@@ -18,7 +18,7 @@ const CustomInput = ({
                 <label
                     className={clsx(
                         "font-inter font-medium opacity-100 text-[12px] tracking-normal bg-[#ffffff] z-100",
-                        focused ? "text-accentcolor" : "text-black"
+                        focused ? "text-indigo-500" : "text-black"
                     )}
                     style={{
                         display: "inline-flex",
@@ -38,7 +38,7 @@ const CustomInput = ({
                 onChange={(e) => onChange(e.target.value)}
                 required
                 type={type ? type : "text"}
-                className="w-full h-[55px] px-[15px] border-[1.5px] border-[#00000030] bg-white rounded-[10px] outline-none focus:ring-0 focus:border-accentcolor shadow-none text-[13.5px] font-medium mt-1 tracking-tight resize-none font-inter placeholder-[rgba(0,0,0,0.3)] text-black"
+                className="w-full h-[55px] px-[15px] border-[1.5px] border-[#00000030] bg-white rounded-[10px] outline-none focus:ring-0 focus:border-indigo-600 shadow-none text-[13.5px] font-medium mt-1 tracking-tight resize-none font-inter placeholder-[rgba(0,0,0,0.3)] text-black"
                 style={{
                     marginTop: "-10px",
                     transition: "border-color 0.2s ease-in-out",

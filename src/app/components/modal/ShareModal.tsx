@@ -129,7 +129,7 @@ const SingleShareButton = ({
     return (
         <Link
             href={getShareUrl(
-                `Write%20a%20*secret%20anonymous%20message*%20for%20me..%20%F0%9F%98%89%20I%20*won%27t%20know*%20who%20wrote%20it..%20%F0%9F%98%82%E2%9D%A4%20%F0%9F%91%89%20${GLOBAL_URL}/anon/${username}`,
+                `Write a secret anonymous message for me ${GLOBAL_URL}/anon/${username}`,
                 platform
             )}
             // href={`https://api.whatsapp.com/send?text=Write%20a%20*secret%20anonymous%20message*%20for%20me..%20%F0%9F%98%89%20I%20*won%27t%20know*%20who%20wrote%20it..%20%F0%9F%98%82%E2%9D%A4%20%F0%9F%91%89%20${GLOBAL_URL}/anon/${username}`}

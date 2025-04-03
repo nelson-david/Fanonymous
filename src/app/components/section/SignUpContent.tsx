@@ -76,7 +76,7 @@ const SignUpContent = () => {
                             type="submit"
                             disabled={processing}
                             className={clsx(
-                                "flex items-center justify-center gap-2 bg-accentcolor w-full h-[52px] text-white rounded-full font-rebond font-bold text-[15px] tracking-normal spin",
+                                "flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 w-full h-[52px] text-white font-inter font-semibold text-[14px] tracking-normal spin",
                                 processing && "opacity-60"
                             )}
                         >
