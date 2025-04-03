@@ -75,7 +75,7 @@ const SignInContent = () => {
                             type="submit"
                             disabled={isPending}
                             className={clsx(
-                                "flex items-center justify-center gap-2 bg-accentcolor w-full h-[52px] text-white rounded-full font-rebond font-bold text-[15px] tracking-normal",
+                                "flex items-center justify-center gap-2 bg-accentcolor w-full h-[52px] text-white rounded-full font-inter font-semibold text-[13px] tracking-tight",
                                 isPending && "opacity-60"
                             )}
                         >

@@ -20,6 +20,20 @@ export default {
                 inter: ["var(--font-inter)", "sans-serif"],
                 rebond: ["ES Rebond Grotesque", "sans-serif"],
             },
+            animation: {
+                "swipe-in": "swipeIn 0.5s ease-out",
+                "swipe-out": "swipeOut 0.5s ease-out",
+            },
+            keyframes: {
+                swipeIn: {
+                    "0%": { transform: "translateX(100%)", opacity: "0" },
+                    "100%": { transform: "translateX(0)", opacity: "1" },
+                },
+                swipeOut: {
+                    "0%": { transform: "translateX(0)", opacity: "1" },
+                    "100%": { transform: "translateX(-100%)", opacity: "0" },
+                },
+            },
         },
     },
     plugins: [],

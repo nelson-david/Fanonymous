@@ -4,9 +4,12 @@ import { useEffect, useState } from "react";
 import SingleMessageCard from "../components/cards/SingleMessageCard";
 import axios from "axios";
 import { API_URL } from "../const";
+import MessageCarousel from "../components/MessageCarousel";
 
-const MessagesContent = ({ messages }: { messages: string[] }) => {
+const MessagesContent = ({ messages }: { messages: any[] }) => {
     const [messagesData, setMessagesData] = useState(messages);
+
+    console.log("MSDG: ", messagesData);
 
     const fetchData = async () => {
         try {
@@ -25,6 +28,7 @@ const MessagesContent = ({ messages }: { messages: string[] }) => {
         <div className="p-0 sm:p-15 md:p-10 lg:p-20">
             <div className="flex justify-center items-center">
                 <div className="w-[850px] p-4 sm:p-5 lg:p-10">
+                    {/* <MessageCarousel messages={messagesData} /> */}
                     {messagesData.length === 0 ? (
                         <div>
                             <p className="font-inter font-medium tracking-tight text-center">

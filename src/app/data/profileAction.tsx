@@ -15,17 +15,17 @@ const profileActions: ProfileActionsProps[] = [
         link: "/messages",
     },
     {
-        title: "Share my profile",
+        title: "Share my link",
         icon: <ProfileIcon {...iconStyle} />,
         gradient: "bg-gradient-to-r from-green-900 to-green-700",
         link: "/share-profile",
     },
-    {
-        title: "Share on Whatsapp",
-        icon: <WhatsappIcon {...iconStyle} />,
-        gradient: "bg-gradient-to-r from-[#0F5F34] to-[#064E3B]",
-        link: "/share-on-whatsapp",
-    },
+    // {
+    //     title: "Share on Whatsapp",
+    //     icon: <WhatsappIcon {...iconStyle} />,
+    //     gradient: "bg-gradient-to-r from-[#0F5F34] to-[#064E3B]",
+    //     link: "/share-on-whatsapp",
+    // },
     // {
     //     title: "Share on Instagram",
     //     icon: <InstagramIcon {...iconStyle} />,

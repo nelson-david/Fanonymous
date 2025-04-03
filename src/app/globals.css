@@ -52,8 +52,8 @@
 @tailwind utilities;
 
 :root {
-    --background: #000000;
-    --foreground: #ffffff;
+    --background: #ffffff;
+    --foreground: #000000;
     --font-rebond: "ES Rebond Grotesque";
 }
 

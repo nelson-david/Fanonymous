@@ -14,10 +14,10 @@ const App = async () => {
         <AppLayout>
             <div className="p-8 sm:p-12 md:p-16 lg:p-20">
                 <div className="flex justify-center items-center">
-                    <div className="w-[100%] lg:w-[550px] lg:p-10">
+                    <div className="w-[100%] lg:w-[550px] md:bg-[#f2f2f2] lg:p-10">
                         <ProfileHeader activeUser={activeUser} />
 
-                        <div className="grid grid-cols-3 gap-8 sm:gap-4 justify-items-center pt-6 pb-6">
+                        <div className="flex gap-8 sm:gap-4 justify-center pt-6 pb-6">
                             {profileActions.map(
                                 (
                                     action: ProfileActionsProps,

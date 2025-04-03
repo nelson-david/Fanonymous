@@ -7,6 +7,7 @@ const style = {
     fontSize: "0.8rem",
 };
 export const API_URL = "https://faithanonymous.vercel.app";
+export const GLOBAL_URL = "https://fanonymous.vercel.app";
 
 export const successToast = (success: string, theme?: string) =>
     toast.success(`${success}`, {
@@ -31,7 +32,7 @@ export const errorToast = (error: string, theme?: string) =>
         draggable: true,
         style: style,
     });
-    
+
 export const warningToast = (warning: string, theme?: string) =>
     toast.warning(`${warning}`, {
         position: "top-right",

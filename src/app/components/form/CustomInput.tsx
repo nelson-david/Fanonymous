@@ -17,8 +17,8 @@ const CustomInput = ({
             {useLabel && (
                 <label
                     className={clsx(
-                        "font-inter font-medium opacity-100 text-[12px] tracking-normal bg-[#000000] z-100",
-                        focused ? "text-accentcolor" : "text-white"
+                        "font-inter font-medium opacity-100 text-[12px] tracking-normal bg-[#ffffff] z-100",
+                        focused ? "text-accentcolor" : "text-black"
                     )}
                     style={{
                         display: "inline-flex",
@@ -38,11 +38,10 @@ const CustomInput = ({
                 onChange={(e) => onChange(e.target.value)}
                 required
                 type={type ? type : "text"}
-                className="w-full h-[55px] px-[15px] border border-[#ffffff55] bg-black rounded-[10px] outline-none focus:ring-0 focus:border-accentcolor shadow-none text-[13.5px] font-medium mt-1 tracking-tighter resize-none font-inter placeholder-[rgba(255,255,255,0.3)] text-white"
+                className="w-full h-[55px] px-[15px] border-[1.5px] border-[#00000030] bg-white rounded-[10px] outline-none focus:ring-0 focus:border-accentcolor shadow-none text-[13.5px] font-medium mt-1 tracking-tight resize-none font-inter placeholder-[rgba(0,0,0,0.3)] text-black"
                 style={{
                     marginTop: "-10px",
                     transition: "border-color 0.2s ease-in-out",
-                    borderWidth: "1.1px",
                 }}
                 onFocus={() => setFocused(true)}
                 onBlur={() => setFocused(false)}
