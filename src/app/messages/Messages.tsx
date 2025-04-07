@@ -4,16 +4,19 @@ import { useEffect, useState } from "react";
 import SingleMessageCard from "../components/cards/SingleMessageCard";
 import axios from "axios";
 import { API_URL } from "../const";
-import MessageCarousel from "../components/MessageCarousel";
 
-const MessagesContent = ({ messages }: { messages: any[] }) => {
+const MessagesContent = ({
+    messages,
+    username,
+}: {
+    messages: any[];
+    username: any;
+}) => {
     const [messagesData, setMessagesData] = useState(messages);
-
-    console.log("MSDG: ", messagesData);
 
     const fetchData = async () => {
         try {
-            const response = await axios.get(`${API_URL}/messages/faith-njah`);
+            const response = await axios.get(`${API_URL}/messages/${username}`);
             setMessagesData(response.data.messages);
         } catch (error) {
             console.error("Error fetching data:", error);
