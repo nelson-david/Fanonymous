@@ -4,10 +4,17 @@ import SingleLink from "@/app/components/cards/SingleLink";
 import { cookies } from "next/headers";
 import AppLayout from "../layouts/AppLayout";
 import ProfileHeader from "../components/cards/ProfileHeader";
+import LogoutButton from "../components/misc/LogoutButton";
+import { redirect } from "next/navigation";
 
 const App = async () => {
     const cookieStore = await cookies();
     const user: any = cookieStore.get("user");
+
+    if (!user) {
+        redirect("/auth/sign-in");
+    }
+
     const activeUser = JSON.parse(user.value);
 
     return (
@@ -33,6 +40,8 @@ const App = async () => {
                                 }
                             )}
                         </div>
+
+                        <LogoutButton />
                     </div>
                 </div>
             </div>
